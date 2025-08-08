@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adicionar relatório</title>
+</head>
+<body>
+            <table>
+                <tbody id="tabela-relatorio">
+                    <!-- Linhas de relatório serão inseridas aqui -->
+                </tbody>
+            </table>
+            <section>
+                <h3>Adicionar Novo Relatório</h3>
+                <form id="form-relatorio">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" required>
+
+                        <label for="mecanico">Mecânico Responsável:</label>
+                    <input type="text" id="mecanico" placeholder="Nome do Mecânico" required>
+
+                    <label for="frota">Frota:</label>
+                    <input type="text" id="frota" placeholder="Número da Frota" required>
+                    
+                    <label for="problema">Descrição do Problema:</label>
+                    <textarea id="problema" placeholder="Descreva o problema" required></textarea>
+                
+                    <label for="solucao" style="width: auto;">Solução:</label>
+                    <textarea id="solucao" placeholder="Descreva a solução" required></textarea>
+
+                    <button type="submit" id="adicionar">Adicionar</button>
+                    <button type="button" onclick="window.location.href='index.html'">Voltar ao início</button>
+                </form>
+                <script src="scriptPagina2.js"></script>
+</body>
+</html>
